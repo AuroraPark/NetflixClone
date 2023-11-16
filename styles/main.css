@@ -1,0 +1,88 @@
+.banner{
+    position:relative;
+}
+
+.banner-image{
+    width: 100vw;;
+}
+
+.banner-left-section{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+}
+
+.banner-right-section{
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+}
+
+.row-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.play-button,
+.detail-button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 1vh;
+    background-color: rgb(255, 255, 255, 1.0);
+    border: 0px solid rgb(0, 0, 0);
+    color: black;
+}
+
+.detail-button{
+    width: 17vw;
+    background-color: rgba(147, 146, 146, 0.8);
+    color: white;
+}
+
+.movie{
+    height: 20vh;
+}
+.movie-name{
+    width: 40vw;
+}
+.movie-info{
+    font-size: 12px;
+    width:37vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contents-list{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.contents-list a{
+    text-decoration: none;
+    color: white;
+}
+.contents-list a:hover{
+    color: skyblue;
+}
+
+.row-contents{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+
+.row-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-content:hover{
+    transform:scale(1.2) ;
+}
