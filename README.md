@@ -1,6 +1,7 @@
 # NetflixClone
 Clone code the Netflix page - html,css
 
+# [:rocket: Go To Demo Page!!](https://aurorapark.github.io/NetflixClone/)
 
 ## 만들게 될 넷플릭스 앱 소개
 ### Introducing the Netflix app I'll be making
@@ -52,7 +53,7 @@ Clone code the Netflix page - html,css
 
 #### <개발 기능>
     - title 추가
+    - 라이브 페이지로 웹상에서 확인가능한 html 페이지 처리(page)
 
 #### <아쉬운 기능>
     - 넷플릭스 로고 파비콘 추가
-    - 라이브 페이지로 웹상에서 확인가능한 html 페이지 처리
