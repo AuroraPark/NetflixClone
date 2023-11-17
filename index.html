@@ -15,10 +15,10 @@
             <div>
                 <img class="netflix-logo" src="assets/icons/netflix-logo.svg">
             </div>
-            <div>
+            <div class="header-menu">
                 <p>메뉴 &#9660;</p>
             </div>
-            <div>
+            <div class="header-menu-list">
                 <ul>
                     <li>홈</li>
                     <li>시리즈</li>
@@ -30,13 +30,23 @@
             </div>
         </div>
         <div class="right-section">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="search-icon ltr-4z3qvp e1svuwfo1" data-name="MagnifyingGlass" aria-hidden="true">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.6177 17.0319C14.078 18.2635 12.125 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 12.125 18.2635 14.078 17.0319 15.6177L22.7071 21.2929L21.2929 22.7071L15.6177 17.0319Z"
-                    fill="currentColor"></path>
-            </svg>
-            <div>키즈</div>
+            <div class="search-container">
+                <div class="search-input-container">
+                    <input class="search-input" type="search" placeholder="인물, 영화, 감독...">
+                </div>
+                <div class="search-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="search-icon ltr-4z3qvp e1svuwfo1" data-name="MagnifyingGlass" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.6177 17.0319C14.078 18.2635 12.125 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 12.125 18.2635 14.078 17.0319 15.6177L22.7071 21.2929L21.2929 22.7071L15.6177 17.0319Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="kids-container">
+                <div>키즈</div>
+                <div class="tooltip">Kids</div>
+            </div>
             <div class="notifications-icon-container">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="notifications-icon ltr-4z3qvp e1svuwfo1" data-name="Bell" aria-hidden="true">
@@ -45,10 +55,12 @@
                         fill="currentColor"></path>
                 </svg>
                 <div class="notifications-count">7</div>
+                <div class="tooltip">알림</div>
             </div>
             <div class="user-container">
                 <img class="current-user-picture" src="assets/images/user.png">
                 <div>&#9660;</div>
+                <div class="tooltip">유저</div>
             </div>
         </div>
     </header>
@@ -78,243 +90,265 @@
                         상세정보
                     </button>
                 </div>
-            </div>
 
+            </div>
+            <div class="banner-right-section">
+                <div class="banner-right-section-detail">&nbsp;</div>
+                <div class="age-info">
+                    15+
+                </div>
+            </div>
 
         </section>
-        <div class="row-section">
-            <div class="contents-list">
-                <div>내가 찜한 콘텐츠</div>
-                <a href="#">></a>
+        <section class="rows">
+            <div class="row-section">
+                <div class="contents-list">
+                    <div>내가 찜한 콘텐츠</div>
+                    <a href="#">></a>
+                </div>
+                <div class="row-contents">
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                </div>
             </div>
-            <div class="row-contents">
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+            <div class="row-section">
+                <div class="contents-list">
+                    <div>영어 자막이 제공되는 한국 드라마</div>
+                    <a href="#">></a>
                 </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
+                <div class="row-contents">
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
 
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
 
+                </div>
             </div>
-        </div>
-        <div class="row-section">
-            <div class="contents-list">
-                <div>영어 자막이 제공되는 한국 드라마</div>
-                <a href="#">></a>
+            <div class="row-section">
+                <div class="contents-list">
+                    <div>지금 뜨는 콘텐츠</div>
+                    <a href="#">></a>
+                </div>
+                <div class="row-contents">
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+
+                </div>
             </div>
-            <div class="row-contents">
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+            <div class="row-section">
+                <div class="contents-list">
+                    <div>해외 가족 모험 영화</div>
+                    <a href="#">></a>
                 </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
+                <div class="row-contents">
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
 
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
 
+                </div>
             </div>
-        </div>
-        <div class="row-section">
-            <div class="contents-list">
-                <div>지금 뜨는 콘텐츠</div>
-                <a href="#">></a>
+            <div class="row-section">
+                <div class="contents-list">
+                    <div>모노노케 히메와 비슷한 콘텐츠</div>
+                    <a href="#">></a>
+                </div>
+                <div class="row-contents">
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie2.webp" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie3.webp" />
+                        <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie4.jpeg" />
+                        <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+                    <div class="row-content">
+                        <img class="movie" src="assets/images/movie1.webp" />
+                        <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
+                    </div>
+
+                </div>
             </div>
-            <div class="row-contents">
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-
-            </div>
-        </div>
-        <div class="row-section">
-            <div class="contents-list">
-                <div>해외 가족 모험 영화</div>
-                <a href="#">></a>
-            </div>
-            <div class="row-contents">
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-
-            </div>
-        </div>
-        <div class="row-section">
-            <div class="contents-list">
-                <div>모노노케 히메와 비슷한 콘텐츠</div>
-                <a href="#">></a>
-            </div>
-            <div class="row-contents">
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="50" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="40" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="9" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie2.webp" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie3.webp" />
-                    <progress value="49" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie4.jpeg" />
-                    <progress value="29" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-                <div class="row-content">
-                    <img class="movie" src="assets/images/movie1.webp" />
-                    <progress value="79" max="100" style="accent-color: rgb(238, 104, 104);"></progress>
-                </div>
-
-            </div>
-        </div>
-
+        </section>
     </main>
 
+    <footer>
+        <div class="footer-info">
+            <div>
+                넷플릭스서비시스 코리아 유한회사 통신판매업신고번호: 제0000-00000-0000-0000-0000 전화번호: 00-000-000-0000(수신자부담)
+            </div>
+            <div>
+                대표: 000 0 000
+            </div>
+            <div>
+                이메일 주소: 000@0000.000
+            </div>
+            <div>
+                주소: 00000 000000 00000 00000
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
