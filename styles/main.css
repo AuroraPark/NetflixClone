@@ -1,3 +1,4 @@
+
 .banner{
     position:relative;
 }
@@ -23,19 +24,18 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
 .play-button,
 .detail-button{
-    width: 10vw;
     height: 5vh;
     border-radius: 1vh;
+    padding: 0px 10px 0px 10px;
     background-color: rgb(255, 255, 255, 1.0);
     border: 0px solid rgb(0, 0, 0);
     color: black;
 }
 
 .detail-button{
-    width: 17vw;
+    padding: 0px 30px 0px 30px; 
     background-color: rgba(147, 146, 146, 0.8);
     color: white;
 }
@@ -51,6 +51,24 @@
     width:37vw;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.banner-right-section{
+    width: auto;
+    padding: 5px 20px 5px 0px;
+    margin-right: 0px;
+    background-color: rgb(52, 49, 49);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+.banner-right-section-detail{
+    margin: 0;
+    border: 1px solid white;
+    background-color: white;
+}
+.age-info{
+    font-size: 12px;
 }
 
 .contents-list{
