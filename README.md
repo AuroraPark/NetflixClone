@@ -3,6 +3,9 @@ Clone code the Netflix page - html,css
 
 # [:rocket: Go To Demo Page!!](https://aurorapark.github.io/NetflixClone/)
 
+![img](https://user-images.githubusercontent.com/47839204/283692950-34e1c5b4-2c5d-49d3-840a-669858052fbe.png)
+
+
 ## 만들게 될 넷플릭스 앱 소개
 ### Introducing the Netflix app I'll be making
 
