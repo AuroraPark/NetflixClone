@@ -3,7 +3,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
     position: fixed;
     top: 0;
@@ -14,6 +14,31 @@
     background-image: linear-gradient(to bottom, #141414, rgba(0, 0, 0, 0.045));
 }
 
+.tooltip{
+    position: absolute;
+    background-color: gray;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    bottom: -30px;
+    transition: opacity 0.15s;
+    /* 툴팁 한줄로 처리 */
+    white-space: nowrap; 
+    color: white; 
+}
+
+.kids-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.user-container:hover .tooltip{
+    opacity: 1;
+}
+
+.kids-container:hover,
+.notifications-icon-container:hover,
+.user-container:hover {
+    cursor: pointer;
+}
 .left-section{
     display:flex;
     align-items: center;
@@ -38,7 +63,7 @@
 }
 
 .right-section{
-    width: 200px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +71,40 @@
     font-size: 11px;
 }
 
+.search-container {
+    display: flex;
+    align-items: right;
+    flex-direction: row;
+    width: 100px;
+    position: relative;
+
+}
+
+.search-input{
+    font-size: 11px;
+    height: 30px;
+    width: 10vw;
+    border: 1px solid #4D4D4D;
+    border-radius: 2px;
+    background-color: black;
+    flex: 1;
+    color: white;
+    display: none;
+}
+.search-container:hover .search-input{
+    display: block;
+    padding-left: 23px;
+}
+.search-container:hover .search-icon{
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    width: 20px;
+}
+
+.search-icon{
+    cursor: pointer;
+}
 
 .notifications-icon-container {
     position: relative;
@@ -69,3 +128,26 @@
     display: flex;
     align-items: center;
 }
+
+.header-menu p,
+.header-menu-list ul{
+    cursor: pointer;
+}
+
+@media (max-width: 750px){
+    .header-menu-list{
+        display: none;
+    }
+}
+@media (min-width: 750px) and (max-width: 991px){
+    .header-menu-list{
+        display: none;
+   }   
+}
+@media (min-width: 999px){
+    .header-menu{
+        display: none;
+   }   
+}
+
+
